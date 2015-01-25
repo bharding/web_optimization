@@ -69,12 +69,59 @@ footer span { float: right; font-style: italic; }
   h2, h3{ page-break-after: avoid; }
 }
 
+
+.BYO, .cam_be_likeb, .s-2048b, .Electronics, .mobilewebdevb, .profilepic, .WPO{
+  background: url(sprites.png) no-repeat;
+}
+
+.BYO{
+  background-position: -150px -32px ;
+  width: 100px;
+  height: 50px;
+}
+
+.cam_be_likeb{
+  background-position: -301px -5px ;
+  width: 100px;
+  height: 102px;
+}
+
+.s-2048b{
+  background-position: -4px -7px ;
+  width: 112px;
+  height: 165px;
+}
+
+.Electronics{
+  background-position: -451px -25px ;
+  width: 100px;
+  height: 61px;
+}
+
+.mobilewebdevb{
+  background-position: -7px -203px ;
+  width: 200px;
+  height: 102px;
+}
+
+.profilepic{
+  background-position: -249px -202px ;
+  width: 70px;
+  height: 70px;
+}
+
+.WPO{
+  background-position: -400px -201px ;
+  width: 100px;
+  height: 62px;
+}
+
  </style>   
   </head>
 
   <body>
     <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
+      <a href="/"><img id = "profilepic" src="img/sprites.png"></a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
     </header>
 
@@ -86,19 +133,19 @@ footer span { float: right; font-style: italic; }
       <div class="content">
         <ul>
           <li>
-            <img src="img/BYO.jpg">
+            <img id="BYO" src="img/sprites.png">
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
           </li>
 
           <li>
-            <img src="img/WPO.jpg">
+            <img id= "WPO" src="img/sprites.png">
             <a href="project-webperf.html">Website Performance Optimization</a>
-            <p>Hey... this class looks familiar.</p>
+            <p>Hey... this class looks familiar.</p>"WPO" 
           </li>
 
           <li>
-            <img src="img/Electronics.jpg">
+            <img id= "Electronics" src="img/sprites.png">
             <a href="project-mobile.html">Mobile Web Development</a>
             <p>Making mobile apps isn't so hard after all.</p>
           </li>
