@@ -1,8 +1,67 @@
 <!DOCTYPE HTML>
 <html>
 <head>  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css">
+<style type="text/css">
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: black;
+}
+
+input {
+  background: grey;
+  font-size: 18px;
+}
+
+form {
+  display: inline-block;
+}
+
+.centered {
+  text-align: center;
+}
+
+#pizzaSize {
+  font-weight: 800;
+}
+
+.mover {
+  position: fixed;
+  width: 256px;
+  z-index: -1;
+}
+
+.randomPizzaContainer {
+  float: left;
+  display: flex;
+}
+
+.randomPizzaContainer:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+ .container {
+  background-color: rgba(240, 60, 60, 0.8);
+}
+
+.sprite { background: url('sprite.png') no-repeat top left; width: 100px;  } 
+.sprite.pizzeria { background-position: 0 0; width: 150px; height: 113px; } 
+.sprite.2048 { background-position: 0 -123px; width: 558px; height: 822px; } 
+.sprite.BYO { background-position: 0 -955px; height: 50px; } 
+.sprite.cam_be_like { background-position: 0 -1015px; width: 400px; height: 408px; } 
+.sprite.Electronics { background-position: 0 -1433px; height: 61px; } 
+.sprite.mobilewebdev { background-position: 0 -1504px; width: 400px; height: 203px; } 
+.sprite.profilepic { background-position: 0 -1717px; width: 70px; height: 70px; } 
+.sprite.WPO { background-position: 0 -1797px; height: 62px; } 
+.sprite.pizza { background-position: 0 -1869px; width: 232px; height: 300px; } 
+</style>
 </head>
 
 <body>
@@ -36,7 +95,7 @@
     </div>
     <div id="callToAction" class="row">
       <div class="col-md-4">
-        <img src="images/pizzeria.jpg" class="img-responsive"> <!-- Image credit to: http://commons.wikimedia.org/wiki/File:HK_TST_night_%E5%98%89%E8%98%AD%E9%81%93_Granville_Road_restaurant_Paisano's_Pizzeria_pizza_Dec-2013.JPG -->
+        <img class="sprite.pizzeria img-responsive"><!-- Image credit to: http://commons.wikimedia.org/wiki/File:HK_TST_night_%E5%98%89%E8%98%AD%E9%81%93_Granville_Road_restaurant_Paisano's_Pizzeria_pizza_Dec-2013.JPG -->
       </div>
       <div class="col-md-8">
         <div class="row">
@@ -104,7 +163,7 @@
         <div id="randomPizzas" class="row">
           <div id="pizza0" class="randomPizzaContainer" style="width:33.33%;">
             <div class="col-md-6">
-              <img src="images/pizza.png" class="img-responsive">
+              <img class="sprite.pizzeria img-responsive">
             </div>
             <div class="col-md-6">
               <h4>The Udacity Special</h4>
@@ -121,9 +180,9 @@
           </div>
           <div id="pizza1" class="randomPizzaContainer" style="width:33.33%;">
             <div class="col-md-6">
-              <img src="images/pizza.png" class="img-responsive">
+              <img class="sprite.pizzeriaimg-responsive">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6"> 
               <h4>The Cameron Special</h4>
               <ul>
                 <li>Chicken</li>
@@ -137,6 +196,7 @@
     </div>
     <div id="footer" class="col-md-12">Thanks for visiting! &copy; 2014 Udacity</div>
   </div>
+  <link rel="stylesheet" href="css/bootstrap-grid-mini.css">
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
