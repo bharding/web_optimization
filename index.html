@@ -69,14 +69,16 @@ footer span { float: right; font-style: italic; }
   h2, h3{ page-break-after: avoid; }
 }
 
-.sprite { background: url('img/sprite.png') no-repeat; width: 100px;  } 
-.sprite.2048 { background-position: 0 0; width: 558px; height: 822px; } 
-.sprite.BYO { background-position: 0 -832px; height: 50px; } 
-.sprite.cam_be_like { background-position: 0 -892px; width: 400px; height: 408px; } 
-.sprite.Electronics { background-position: 0 -1310px; height: 61px; } 
-.sprite.mobilewebdev { background-position: 0 -1381px; width: 400px; height: 203px; } 
-.sprite.profilepic { background-position: 0 -1594px; width: 70px; height: 70px; } 
-.sprite.WPO { background-position: 0 -1674px; height: 62px; } 
+.sprite { background: url('sprite.png') no-repeat top left; width: 100px;  } 
+.sprite.pizzeria { background-position: 0 0; width: 150px; height: 113px; } 
+.sprite.2048 { background-position: 0 -123px; width: 558px; height: 822px; } 
+.sprite.BYO { background-position: 0 -955px; height: 50px; } 
+.sprite.cam_be_like { background-position: 0 -1015px; width: 400px; height: 408px; } 
+.sprite.Electronics { background-position: 0 -1433px; height: 61px; } 
+.sprite.mobilewebdev { background-position: 0 -1504px; width: 400px; height: 203px; } 
+.sprite.profilepic { background-position: 0 -1717px; width: 70px; height: 70px; } 
+.sprite.WPO { background-position: 0 -1797px; height: 62px; } 
+.sprite.pizza { background-position: 0 -1869px; width: 232px; height: 300px; } 
 
  </style>   
   </head>
@@ -113,7 +115,7 @@ footer span { float: right; font-style: italic; }
           </li>
 
           <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <div><img class ="sprite.pizzeria"></div>
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
