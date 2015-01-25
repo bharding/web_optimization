@@ -69,59 +69,21 @@ footer span { float: right; font-style: italic; }
   h2, h3{ page-break-after: avoid; }
 }
 
-
-.BYO, .cam_be_likeb, .s-2048b, .Electronics, .mobilewebdevb, .profilepic, .WPO{
-  background: url(sprites.png) no-repeat;
-}
-
-.BYO{
-  background-position: -150px -32px ;
-  width: 100px;
-  height: 50px;
-}
-
-.cam_be_likeb{
-  background-position: -301px -5px ;
-  width: 100px;
-  height: 102px;
-}
-
-.s-2048b{
-  background-position: -4px -7px ;
-  width: 112px;
-  height: 165px;
-}
-
-.Electronics{
-  background-position: -451px -25px ;
-  width: 100px;
-  height: 61px;
-}
-
-.mobilewebdevb{
-  background-position: -7px -203px ;
-  width: 200px;
-  height: 102px;
-}
-
-.profilepic{
-  background-position: -249px -202px ;
-  width: 70px;
-  height: 70px;
-}
-
-.WPO{
-  background-position: -400px -201px ;
-  width: 100px;
-  height: 62px;
-}
+.sprite { background: url('img/sprite.png') no-repeat; width: 100px;  } 
+.sprite.2048 { background-position: 0 0; width: 558px; height: 822px; } 
+.sprite.BYO { background-position: 0 -832px; height: 50px; } 
+.sprite.cam_be_like { background-position: 0 -892px; width: 400px; height: 408px; } 
+.sprite.Electronics { background-position: 0 -1310px; height: 61px; } 
+.sprite.mobilewebdev { background-position: 0 -1381px; width: 400px; height: 203px; } 
+.sprite.profilepic { background-position: 0 -1594px; width: 70px; height: 70px; } 
+.sprite.WPO { background-position: 0 -1674px; height: 62px; } 
 
  </style>   
   </head>
 
   <body>
     <header>
-      <a href="/"><img id = "profilepic" src="img/sprites.png"></a>
+     <div><a href="/"><img class = "sprite profilepic"></a></div>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
     </header>
 
@@ -133,19 +95,19 @@ footer span { float: right; font-style: italic; }
       <div class="content">
         <ul>
           <li>
-            <img id="BYO" src="img/sprites.png">
+            <div><img class="sprite BYO"></div>
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
           </li>
 
           <li>
-            <img id= "WPO" src="img/sprites.png">
+            <div><img class= "sprite WPO"></div>
             <a href="project-webperf.html">Website Performance Optimization</a>
-            <p>Hey... this class looks familiar.</p>"WPO" 
+            <p>Hey... this class looks familiar.</p>
           </li>
 
           <li>
-            <img id= "Electronics" src="img/sprites.png">
+            <div><img class= "sprite Electronics"></div>
             <a href="project-mobile.html">Mobile Web Development</a>
             <p>Making mobile apps isn't so hard after all.</p>
           </li>
