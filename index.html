@@ -49,7 +49,7 @@ header p span { font-size: 0.8em; font-weight: normal;}
 
 .content { padding: 1em 1em; }
 .content li { list-style-type: none; font-size: 1.1em;}
-li img { float:left; padding-right: 1em; }
+li img { float:left; padding-right: .02em; }
 li p { font-size: 0.9em; font-style: italic; }
 
 footer {
@@ -69,24 +69,22 @@ footer span { float: right; font-style: italic; }
   h2, h3{ page-break-after: avoid; }
 }
 
-.sprite { background: url('sprite.png') no-repeat top left; width: 100px;  } 
-.sprite.pizzeria { background-position: 0 0; width: 150px; height: 113px; } 
-.sprite.2048 { background-position: 0 -123px; width: 558px; height: 822px; } 
-.sprite.BYO { background-position: 0 -955px; height: 50px; } 
-.sprite.cam_be_like { background-position: 0 -1015px; width: 400px; height: 408px; } 
-.sprite.Electronics { background-position: 0 -1433px; height: 61px; } 
-.sprite.mobilewebdev { background-position: 0 -1504px; width: 400px; height: 203px; } 
-.sprite.profilepic { background-position: 0 -1717px; width: 70px; height: 70px; } 
-.sprite.WPO { background-position: 0 -1797px; height: 62px; } 
-.sprite.pizza { background-position: 0 -1869px; width: 232px; height: 300px; } 
+.sprite { background: url('img/sprite.png') no-repeat; width: 50px;  } 
+.sprite.2048 { background-position: 0 0; width: 558px; height: 822px; } 
+.sprite.BYO { background-position: 0 -832px; height: 50px; } 
+.sprite.cam_be_like { background-position: 0 -892px; width: 400px; height: 408px; } 
+.sprite.Electronics { background-position: 0 -1310px; height: 61px; } 
+.sprite.mobilewebdev { background-position: 0 -1381px; width: 400px; height: 203px; } 
+.sprite.profilepic { background-position: 0 -1594px; width: 70px; height: 70px; } 
+.sprite.WPO { background-position: 0 -1674px; height: 62px; } 
 
  </style>   
   </head>
 
   <body>
     <header>
-     <div><a href="/"><img class = "sprite profilepic"></a></div>
-      <p>Cameron Pittman<br><span>Course Developer</span></p>
+     <div><a href="/"><img class = 'sprite profilepic'></a>
+      <p>Cameron Pittman<br><span>Course Developer</span></p></div>
     </header>
 
     <div class="container">
@@ -97,27 +95,27 @@ footer span { float: right; font-style: italic; }
       <div class="content">
         <ul>
           <li>
-            <div><img class="sprite BYO"></div>
-            <a href="project-2048.html">Build Your Own 2048!</a>
-            <p>I made my own version of 2048. How cool is that!?</p>
+            <div><img class='sprite BYO'></div>
+            <div>&nbsp;&nbsp;<a href="project-2048.html">Build Your Own 2048!</a>
+            <p>&nbsp;&nbsp;I made my own version of 2048. How cool is that!?</p></div>
           </li>
 
           <li>
-            <div><img class= "sprite WPO"></div>
-            <a href="project-webperf.html">Website Performance Optimization</a>
-            <p>Hey... this class looks familiar.</p>
+            <div><img class= 'sprite WPO'></div>
+            <div>&nbsp;&nbsp;<a href="project-webperf.html">Website Performance Optimization</a>
+            <p>&nbsp;&nbsp;Hey... this class looks familiar.</p></div>
           </li>
 
           <li>
-            <div><img class= "sprite Electronics"></div>
-            <a href="project-mobile.html">Mobile Web Development</a>
-            <p>Making mobile apps isn't so hard after all.</p>
+            <div><img class= 'sprite Electronics'></div>
+            <div>&nbsp;&nbsp;<a href="project-mobile.html">Mobile Web Development</a>
+            <p>&nbsp;&nbsp;Making mobile apps isn't so hard after all.</p></div>
           </li>
 
           <li>
-            <div><img class ="sprite.pizzeria"></div>
-            <a href="views/pizza.html">Cam's Pizzeria</a>
-            <p>Who wants a performant pizza?</p>
+            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            &nbsp;&nbsp;<a href="views/pizza.html">Cam's Pizzeria</a>
+            <p>&nbsp;&nbsp;Who wants a performant pizza?</p>
           </li>
         </ul>
     </div>

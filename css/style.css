@@ -1,9 +1,11 @@
-@font-face {
-    font-family: "font of all knowledge";
+font-face {
+    font-family: "font_body";
     src: href="//fonts.googleapis.com/css?family=Open+Sans";
-    font-weight: 400, 7;
+    font-weight: 400, 700;
     font-style: normal;
 }
+
+
 
 /* Smartphones (portrait) */
 @media only screen and (max-width: 480px) {

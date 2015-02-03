@@ -14,37 +14,43 @@ body {
 }
 
 input {
-  background: grey;
+  background: gray;
   font-size: 18px;
 }
 
 form {
   display: inline-block;
 }
+h2{
+  text-align: center
 
+}
 .centered {
   text-align: center;
 }
 
 #pizzaSize {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .mover {
   position: fixed;
   width: 256px;
   z-index: -1;
+
 }
 
 .randomPizzaContainer {
   float: left;
   display: flex;
+  width:33.33%;
 }
 
 .randomPizzaContainer:after {
   content: "";
   display: table;
   clear:both;
+  width:33.33%;
 }
 
  .container {
@@ -63,7 +69,7 @@ form {
 .sprite.pizza { background-position: 0 -1869px; width: 232px; height: 300px; } 
 </style>
 </head>
-
+<?php flush(); ?>
 <body>
   <div class="container">
     <div id="header" class="row">
@@ -135,7 +141,7 @@ form {
     </div>
     <div id="locations" class="row">
       <div class="col-md-12">
-        <h2 style="text-align: center">Locations!</h2>
+        <h2>Locations!</h2>
         <div class="row">
           <div class="col-md-6">
             <h3>Pizza Road</h3>
@@ -150,7 +156,7 @@ form {
     </div>
     <div id="pizzaGenerator" class="row">
       <div class="col-md-12">
-        <h2 style="text-align: center">Our Pizzas!</h2>
+        <h2>Our Pizzas!</h2> <!-- style="text-align: center" and style="width:33.33%;"randomPizzaContainer -->
         <div class="row">
           <div class="col-md-12">
             <em>What size pizza would you like? Use the slider below to change pizza sizes.</em>
@@ -161,7 +167,7 @@ form {
           </div>
         </div>
         <div id="randomPizzas" class="row">
-          <div id="pizza0" class="randomPizzaContainer" style="width:33.33%;">
+          <div id="pizza0" class="randomPizzaContainer">
             <div class="col-md-6">
               <img class="sprite.pizzeria img-responsive">
             </div>
@@ -178,9 +184,9 @@ form {
               </ul>
             </div>
           </div>
-          <div id="pizza1" class="randomPizzaContainer" style="width:33.33%;">
+          <div id="pizza1" class="randomPizzaContainer">
             <div class="col-md-6">
-              <img class="sprite.pizzeriaimg-responsive">
+              <img class="sprite.pizzeria img-responsive">
             </div>
             <div class="col-md-6"> 
               <h4>The Cameron Special</h4>
@@ -197,7 +203,7 @@ form {
     <div id="footer" class="col-md-12">Thanks for visiting! &copy; 2014 Udacity</div>
   </div>
   <link rel="stylesheet" href="css/bootstrap-grid-mini.css">
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript"  src="js/main.js"></script>
 </body>
 
 </html>
